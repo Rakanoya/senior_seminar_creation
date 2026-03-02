@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Image Generator</title>
+    <link rel="stylesheet" href="syles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐕 Dog Image Generator</h1>
+        <p class="subtitle">Describe your dream dog and watch it come to life!</p>
+        
+        <div class="input-section">
+            <label for="breedSelect">Select a dog breed:</label>
+            <select id="breedSelect">
+                <option value="">Loading breeds...</option>
+            </select>
+            <button id="generateBtn">Get Random Dog</button>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <p>Creating your dog... ✨</p>
+        </div>
+
+        <div class="result-section" id="resultSection" style="display: none;">
+            <img id="resultImage" alt="Generated dog image">
+        </div>
+
+        <div class="error" id="error" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
