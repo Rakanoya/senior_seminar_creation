@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create and explore random dog images by breed. Build your collection of favorite dogs from hundreds of breeds.">
+    <meta name="theme-color" content="#0f8a7c">
+    <meta property="og:title" content="Dog Image Generator">
+    <meta property="og:description" content="Discover adorable dog images by breed. Save your favorites and explore hundreds of dog breeds.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dog-generator.example.com">
+    <meta property="og:image" content="https://dog.ceo/api/breeds/image/random">
     <title>Dog Image Generator</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🐕</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -13,6 +21,20 @@
     <main class="container">
         <h1>Dog Image Generator</h1>
         <p class="subtitle">Describe your dream dog and watch it come to life!</p>
+        
+        <details class="instructions">
+            <summary class="instructions-toggle">How to use</summary>
+            <div class="instructions-content">
+                <ol>
+                    <li><strong>Select a Breed:</strong> Choose from hundreds of dog breeds in the dropdown menu</li>
+                    <li><strong>Generate Random Image:</strong> Click "Get Random Dog" to fetch a random image of your selected breed</li>
+                    <li><strong>Get Another:</strong> Use "Another One" to get more images of the same breed</li>
+                    <li><strong>Save Favorites:</strong> Click "Save to Favorites" to keep dogs you love</li>
+                    <li><strong>Manage Collection:</strong> Remove individual favorites or clear your entire collection at once</li>
+                </ol>
+                <p class="instructions-note">💾 Your favorites are saved locally in your browser and persist between visits.</p>
+            </div>
+        </details>
         
         <div class="input-section">
             <label for="breedSelect">Select a dog breed:</label>

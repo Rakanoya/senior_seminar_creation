@@ -291,6 +291,51 @@ button:disabled {
     }
 }
 
+.instructions {
+    margin-bottom: 24px;
+    padding: 14px 16px;
+    background: rgba(15, 138, 124, 0.08);
+    border: 1px solid rgba(15, 138, 124, 0.2);
+    border-radius: 12px;
+}
+
+.instructions-toggle {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--brand);
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.instructions-toggle:hover {
+    color: var(--brand-deep);
+}
+
+.instructions-content {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(15, 138, 124, 0.15);
+    animation: fadeIn 0.2s ease;
+}
+
+.instructions-content ol {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--ink);
+}
+
+.instructions-content li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.instructions-note {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 24px 18px;
